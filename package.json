@@ -1,0 +1,29 @@
+{
+  "name": "upgraded-garbanzo",
+  "version": "1.0.0",
+  "description": "Prove It ver 2.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "front": "cd client && npm start",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LimeRicky84/upgraded-garbanzo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LimeRicky84/upgraded-garbanzo/issues"
+  },
+  "homepage": "https://github.com/LimeRicky84/upgraded-garbanzo#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "graphql": "^16.6.0",
+    "react-app-rewired": "^2.2.1"
+  }
+}
