@@ -10,8 +10,8 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Profile from './pages/Profile';
+import Home from './pages/home';
+import Profile from './pages/profile';
 import Layout from './views/layout';
 console.log('3')
 
