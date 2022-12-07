@@ -11,6 +11,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Profile from './pages/Profile';
 import Layout from './views/layout';
 console.log('3')
 
@@ -41,8 +42,12 @@ function App() {
       <Router>
         <Routes>
           <Route
-          path="/"
-          element={<Layout><Home /></Layout>}
+            path="/"
+            element={<Layout><Home /></Layout>}
+          />
+          <Route
+            path='/Profile'
+            element={<Layout><Profile /></Layout>}
           />
         </Routes>
       </Router>

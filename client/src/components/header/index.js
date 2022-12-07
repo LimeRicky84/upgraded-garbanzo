@@ -7,7 +7,7 @@ function header() {
   return (
     <div className='headerDiv'>
         <ul>
-            <Link to="/Home"><li className='headerLi'>Home</li></Link>
+            <Link to="/"><li className='headerLi'>Home</li></Link>
             <Link to="/Profile"><li className='headerLi'>Profile</li></Link>
         </ul>
     </div>
